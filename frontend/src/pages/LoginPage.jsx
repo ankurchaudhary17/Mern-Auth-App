@@ -13,6 +13,7 @@ const {login ,isLoading,error}=useAuthStore();
     e.preventDefault();
     await login(email,password);
   };
+  console.log("Login page");
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
